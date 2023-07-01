@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="logo-container">
+    <p class="logo">Bianca dos Santos</p>
+  </div>
+  <div class="contatos-container">
+    <div class="contato">
+      <fa-icon [icon]="['fab', 'whatsapp']" (click)="abrirURL('https://api.whatsapp.com/send?phone=5521980184218')"></fa-icon>
+    </div>
+    <div class="contato">
+      <fa-icon [icon]="['fab', 'linkedin']" (click)="abrirURL('https://www.linkedin.com/in/biancadsferreira/')"></fa-icon>
+    </div>
+    <div class="contato">
+      <fa-icon [icon]="['fab', 'github']" (click)="abrirURL('https://github.com/biancasferreira')"></fa-icon>
+    </div>
+  </div>
+
+  <div class="subheader">SOBRE</div>
+  <div class="conteudo-container">
+    <div class="resumo">
+      <p>Olá, meu nome é Bianca e sou estudante de BCC. Nos últimos anos, atuei na área de suporte,
+        monitoramento de redes SDWAN, SDH e Metro. Possuo experiência em várias ferramentas de monitoramento, tais como
+        Zabbix, Cact e PRTG. Quando atuava na área de redes, realizava troubleshooting básico em
+        rotas de rede metro e SDH. Atualmente, trabalho como tester, automatizando testes com web
+        scraping e rotas API REST, além de utilizar automação de testes com Jenkins.
+      </p>
+    </div>
+    <div class="education-container">
+      <p class="education-title">Formação Acadêmica</p>
+      <ul>
+        <li class="education-body">Centro Universitário Augusto Motta (Unisuam) - Ciência da Computação. (2019 - Hoje)</li>
+      </ul>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="project-container">
+      <p class="project-title">Projetos</p>
+      <div class="card-container">
+        <div class="card" (mouseover)="onCardMouseOver($event)" (mouseout)="onCardMouseOut($event)">
+          <img src="../../assets/download.jpg" alt="Imagem 1">
+          <div class="card-content">
+            <h3>Título do Card 1</h3>
+            <p>Conteúdo do Card 1</p>
+          </div>
+        </div>
+
+        <div class="card" (mouseover)="onCardMouseOver($event)" (mouseout)="onCardMouseOut($event)">
+          <img src="../../assets/download.jpg" alt="Imagem 2">
+          <div class="card-content">
+            <h3>Título do Card 2</h3>
+            <p>Conteúdo do Card 2</p>
+          </div>
+        </div>
+
+        <div class="card" (mouseover)="onCardMouseOver($event)" (mouseout)="onCardMouseOut($event)">
+          <img src="../../assets/download.jpg" alt="Imagem 3">
+          <div class="card-content">
+            <h3>Título do Card 3</h3>
+            <p>Conteúdo do Card 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
